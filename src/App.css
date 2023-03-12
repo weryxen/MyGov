@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #f2e4d9;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* new */
+
+.say-welcome {
+  color: white;
+  background-color: #1990fe;
+  max-width: 490px;
+  height: 100vh;
+  text-align: left;
+}
+.say-welcome-inner {
+  margin: 80px;
+}
+.say-welcome-inner h1 {
+  font-size: 70px;
+}
+.say-welcome-inner p {
+  margin: 30px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* new */
+
+.header-inner {
+  background-color: #fff;
+  display: flex;
+}
+.header-input {
+  padding-top: 180px;
+  margin: 0 auto;
+}
+
+.header-input .title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header-input .title p {
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.info-zone input {
+  margin: 5px 0;
+  border: none;
+  border-bottom: solid 1px black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 318px;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.info-zone button {
+  margin-top: 15px;
+  height: 43px;
+  width: 318px;
+  left: 0px;
+  border-radius: 5px;
+  padding: 12px 16px 12px 16px;
+}
+.info-zone p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* new */
+
+.mainpage {
+  display: flex;
+  color: black;
+  height: 100vh;
+  width: 100%;
+}
+.mainpage-info {
+  background-color: #fff;
+  max-width: 490px;
+  height: 100vh;
+
+  text-align: left;
+}
+.modal-window {
+  padding: 15px;
+}
+.modal-window button {
+  margin-top: 15px;
+  height: 43px;
+  width: 318px;
+  left: 0px;
+  border-radius: 5px;
+  padding: 12px 16px 12px 16px;
+}
+.modal-window h1 {
+  padding: 15px 0 ;
+}
+.cards {
+  overflow: auto;
 }
